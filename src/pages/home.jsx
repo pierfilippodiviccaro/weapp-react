@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <HeroBanner />
-      <section className="container py-5">
+      <section className="container py-5 text-primary">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi ipsa
           consequatur, expedita eius corporis nesciunt vitae beatae eum labore
