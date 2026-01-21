@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
 
 export default function Header({ nomeApp }) {
-  console.log("Renderizzo Header");
+ 
 
   const headerLinks = [
     { title: "Home", path: "/" },
-    { title: "Libri", path: "/films" },
+    { title: "films", path: "/films" },
   ];
   return (
     <header className="fixed-top">
