@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import ReviewCard from "../components/reviewCard.jsx";
 
-export default function BookDetailPage() {
+export default function FilmDetail() {
   const [film, setFilm] = useState({});
   const { id } = useParams();
 
@@ -12,7 +12,7 @@ export default function BookDetailPage() {
 
   useEffect(() => {
     axios
-      .get(`${backendBaseUrl}/movies${id}`)
+      .get(`${backendBaseUrl}/${id}`)
       .then((resp) => {
         setFilm(resp.data);
       })
@@ -30,7 +30,9 @@ export default function BookDetailPage() {
     <>
       <section
         className="py-5 mt-5 ms_page-banner d-flex align-items-center justify-content-center"
+      
       >
+        
         <div className="container text-center ">
           <h1 className="text-white">{film.title}</h1>
         </div>

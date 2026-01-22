@@ -7,9 +7,7 @@ export default function FilmCard({ film }) {
     <div className="card h-100">
       <img
         src={
-          film.image !== null
-            ? `${backendBaseUrl}`
-            : NoImagePlaceholder
+          film.image 
         }
         className="card-img-top"
         alt="..."
@@ -19,7 +17,7 @@ export default function FilmCard({ film }) {
           {film.title} - {film.director}
         </h5>
         <p className="card-text">{film.abstract}</p>
-        <Link to={`/movies/${film.id}`} className="btn btn-outline-primary">
+        <Link to={`/films/${film.id}`} className="btn btn-outline-primary">
           Vedi dettagli
         </Link>
       </div>
