@@ -6,6 +6,7 @@ export default function Header({ nomeApp }) {
   const headerLinks = [
     { title: "Home", path: "/" },
     { title: "films", path: "/films" },
+    {title:"crea film", path:"create"}
   ];
   return (
     <header className="fixed-top">

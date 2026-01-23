@@ -4,8 +4,8 @@ import FilmCard from "../components/filmCard.jsx";
 
 export default function FilmsPage() {
   const [films, setFilms] = useState([]);
-  const [page,setPage] = useState(1)
-  const [totalPages, setTotalPages]=useState(null) 
+  const [page, setPage] = useState(1)
+  const [totalPages, setTotalPages] = useState(null)
   const backendBaseUrl = import.meta.env.VITE_BACKEND_URL
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export default function FilmsPage() {
       });
   }, [page]);
 
-    return (
+  return (
     <>
       <section className="py-5 mt-5 container">
         <h1>Lista di tutti i film</h1>
