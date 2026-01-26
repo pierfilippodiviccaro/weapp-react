@@ -7,7 +7,7 @@ export default function HeroBanner() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
           autem corporis exercitationem eos perspiciatis molestiae architecto
           assumenda nam ipsa voluptas reprehenderit dignissimos debitis, a nihil
-          facere? Sapiente est omnis labore?
+          facere? Sapiente est omnis labore?asasd
         </p>
       </div>
     </section>
